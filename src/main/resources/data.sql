@@ -1,0 +1,10 @@
+insert into users values (1,'sam');
+insert into creds values (1,'pass','sam',1);
+insert into projects values (1,'This website was made completely by me! It features a front-end designed by me in Angular, and a back-end REST API created in Spring Boot','This Website','http://github.com/halfcreative/mysite','GitHub',1);
+insert into tech values (1,'Angular');
+insert into tech values (2,'Java');
+insert into tech values (3,'Spring');
+insert into project_tech values (1,1);
+insert into project_tech values (1,2);
+insert into project_tech values (1,3);
+insert into history values (1,'Revature','Software developer for Revature. 10 Weeks of training in Full-Stack web application development. Contracted to Cognizant for work on a project with Toyota Motors North America.',null,'Software Developer','July 2018',1);
