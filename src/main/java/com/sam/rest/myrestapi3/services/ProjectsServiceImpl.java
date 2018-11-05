@@ -6,7 +6,6 @@ import javax.persistence.EntityNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.sam.rest.myrestapi3.beans.Projects;
 import com.sam.rest.myrestapi3.daos.ProjectsDAO;

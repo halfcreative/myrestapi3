@@ -24,10 +24,10 @@ public class Projects implements Serializable{
 	@Column(name="DESC")
 	private String description;
 	
-	@Column(name="urlName")
+	@Column(name="URLNAME")
 	private String urlName;
 	
-	@Column(name="url")
+	@Column(name="URL")
 	private String url;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -35,7 +35,7 @@ public class Projects implements Serializable{
 	private Users user;
 	
 	@ManyToMany(cascade= {CascadeType.PERSIST,CascadeType.MERGE})
-	@JoinTable(name="project_tech",joinColumns = @JoinColumn(name="projectId"),inverseJoinColumns = @JoinColumn(name="techId"))
+	@JoinTable(name="PROJECT_TECH",joinColumns = @JoinColumn(name="PROJECT_ID"),inverseJoinColumns = @JoinColumn(name="TECH_ID"))
 	private List<Tech> techs = new ArrayList<>();
 	
 	public void addTech(Tech tech) {

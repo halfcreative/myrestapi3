@@ -10,5 +10,7 @@ public interface ProjectsDAO extends JpaRepository<Projects,Integer>{
 
 	List<Projects> findAllByUserId(int userId);
 	
+	
+	
 	void deleteByName(String name);
 }
