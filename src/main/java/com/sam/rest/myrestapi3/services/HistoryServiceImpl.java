@@ -16,13 +16,11 @@ public class HistoryServiceImpl implements HistoryService {
 	private HistoryDAO historyDao;
 	
 	@Override
-	@Transactional
 	public History create(History history) {
 		return historyDao.save(history);
 	}
 
 	@Override
-	@Transactional
 	public History updateHistory(History history) {
 		return historyDao.save(history);
 	}

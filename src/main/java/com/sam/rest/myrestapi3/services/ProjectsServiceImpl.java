@@ -18,13 +18,11 @@ public class ProjectsServiceImpl implements ProjectsService {
 	private ProjectsDAO projectsDao;
 	
 	@Override
-	@Transactional
 	public Projects create(Projects project) {
 		return projectsDao.save(project);
 	}
 
 	@Override
-	@Transactional
 	public Projects updateProject(Projects project) {
 		return projectsDao.save(project);
 	}
@@ -35,7 +33,6 @@ public class ProjectsServiceImpl implements ProjectsService {
 	}
 
 	@Override
-	@Transactional
 	public void deleteProjectByName(String name) {
 		projectsDao.deleteByName(name);
 	}
