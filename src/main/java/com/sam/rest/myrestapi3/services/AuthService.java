@@ -11,5 +11,9 @@ public interface AuthService {
 	 * @return
 	 */
 	Users authenticate(Creds creds);
+	
+	Users createUser(Users u);
+	
+	Creds createCreds(Creds creds);
 
 }

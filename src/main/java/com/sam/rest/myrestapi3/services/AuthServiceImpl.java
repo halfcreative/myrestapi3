@@ -28,6 +28,16 @@ public class AuthServiceImpl implements AuthService {
 		return null;
 	}
 
+	@Override
+	public Users createUser(Users u) {
+		return userDao.save(u);
+	}
+
+	@Override
+	public Creds createCreds(Creds creds) {
+		return credsDao.save(creds);
+	}
+
 
 
 }

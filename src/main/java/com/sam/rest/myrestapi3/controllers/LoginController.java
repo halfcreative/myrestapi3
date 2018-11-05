@@ -27,5 +27,13 @@ public class LoginController {
 		}
 		return resp;
 	}
+
+	@PostMapping(value="/newCreds",consumes="application/json")
+	public ResponseEntity<Creds> createNewCreds(@RequestBody Creds creds){
+		ResponseEntity<Creds> resp = null;
+		Creds u = auth.createCreds(creds);
+		resp = new ResponseEntity<>(u,HttpStatus.OK);
+		return resp;
+	}
 	
 }
