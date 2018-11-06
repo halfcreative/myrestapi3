@@ -19,16 +19,16 @@ public class History implements Serializable{
 	@Column(name="COMPANY_NAME")
 	private String companyName;
 	
-	@Column(name="POSITION")
+	@Column(name="POSITION_TITLE")
 	private String position;
 	
-	@Column(name="DESC")
+	@Column(name="DESCRIPTION")
 	private String description;
 	
-	@Column(name="START")
+	@Column(name="START_DATE")
 	private String start;
 	
-	@Column(name="END")
+	@Column(name="END_DATE")
 	private String end;
 	
 	@ManyToOne(fetch=FetchType.EAGER)

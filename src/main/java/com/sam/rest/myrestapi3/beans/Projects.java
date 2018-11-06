@@ -21,13 +21,13 @@ public class Projects implements Serializable{
 	@Column(name="NAME")
 	private String name;
 	
-	@Column(name="DESC")
+	@Column(name="DESCRIPTION")
 	private String description;
 	
-	@Column(name="URLNAME")
+	@Column(name="PROJECT_URL_HOST_NAME")
 	private String urlName;
 	
-	@Column(name="URL")
+	@Column(name="PROJECT_URL")
 	private String url;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
