@@ -19,6 +19,14 @@ public class Tech implements Serializable {
 	@Column(name="NAME")
 	private String name;
 
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
+
+	public void setTechId(int techId) {
+		this.techId = techId;
+	}
+
 	public String getName() {
 		return name;
 	}

@@ -35,6 +35,14 @@ public class History implements Serializable{
 	@JoinColumn(name="USER_ID")
 	private Users user;
 
+	public void setHistoryId(int historyId) {
+		this.historyId = historyId;
+	}
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+
 	public String getCompanyName() {
 		return companyName;
 	}

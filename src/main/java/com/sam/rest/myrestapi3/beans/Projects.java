@@ -29,7 +29,23 @@ public class Projects implements Serializable{
 	
 	@Column(name="PROJECT_URL")
 	private String url;
-	
+
+	public void setProjectId(int projectId) {
+		this.projectId = projectId;
+	}
+
+	public Users getUser() {
+		return user;
+	}
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+
+	public void setTechs(List<Tech> techs) {
+		this.techs = techs;
+	}
+
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="USER_ID")
 	private Users user;

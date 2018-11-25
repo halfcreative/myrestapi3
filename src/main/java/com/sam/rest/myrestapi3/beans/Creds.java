@@ -14,7 +14,15 @@ public class Creds {
 
 	@Column(name="USERNAME")
 	private String username;
-	
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+
 	@Column(name="PASSWORD")
 	private String password;
 	

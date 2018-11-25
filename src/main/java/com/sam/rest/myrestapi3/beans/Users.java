@@ -19,7 +19,15 @@ public class Users implements Serializable{
 	
 	@Column(name="NAME")
 	private String name;
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public Users() {
 		super();
 	}
