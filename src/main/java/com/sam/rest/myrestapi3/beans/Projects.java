@@ -46,7 +46,7 @@ public class Projects implements Serializable{
 		this.techs = techs;
 	}
 
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="USER_ID")
 	private Users user;
 	
